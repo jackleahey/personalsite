@@ -58,16 +58,16 @@ $mail = new PHPMailer();
 
 /* Add your SMTP Codes after this Line */
 $mail->isSMTP();
-$mail->Host = "jackleahey.42@gmail.com";
+$mail->Host =
 $mail->SMTPAuth = true;
-$mail->Username = "jackleahey.42@gmail.com";
-$mail->Password = '!kid123jackThe'
+$mail->Username =
+$mail->Password =
 $mail->Port = 465;
 $mail->SMTPSecure = "ssl";
 
 $mail->isHTML(true);
 $mail->setFrom($email, $name);
-$mail->addAddress("jackleahey.42@gmail.com");
+$mail->addAddress();
 $mail->Subject = ("$email ($subject)");
 $mail->Body = $message
 
